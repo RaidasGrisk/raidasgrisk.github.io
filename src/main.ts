@@ -2,6 +2,10 @@ import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
 
+// vercel analytics
+import { inject } from '@vercel/analytics'
+inject()
+
 // naiveui - tailwind css conflict
 // https://www.naiveui.com/en-US/os-theme/docs/style-conflict
 // https://github.com/tusen-ai/naive-ui/issues/2782
